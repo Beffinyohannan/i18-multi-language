@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      body > .skiptranslate {
+        display: none;
+      }
+
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
+      body {
+        top: 0px !important;
+      }
+      @media print {
+        #google_translate_element {
+          display: none;
+        }
+      }
+      .goog-te-menu-value:hover,
+.goog-te-menu2-item:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
